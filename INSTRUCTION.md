@@ -17,3 +17,7 @@
 13 kubectl get pods -n mysql -o wide
 14 kubectl get nodes -n todoapp -o wide
 15 kubectl get pods -n todoapp -o wide
+
+Expected results:
+mysql pods only on app=mysql nodes, each on separate nodes
+todoapp pods preferring app=todoapp nodes and not co-locating
